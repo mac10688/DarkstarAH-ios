@@ -15,6 +15,8 @@
 		C4FEDDB31F62306D00CFB481 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4FEDDB11F62306D00CFB481 /* LaunchScreen.storyboard */; };
 		C4FEDDBE1F62306D00CFB481 /* DarkstarAuctionHouseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4FEDDBD1F62306D00CFB481 /* DarkstarAuctionHouseTests.swift */; };
 		C4FEDDC91F62306D00CFB481 /* DarkstarAuctionHouseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4FEDDC81F62306D00CFB481 /* DarkstarAuctionHouseUITests.swift */; };
+		C4FEDDD71F6231F400CFB481 /* PopupDialog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4FEDDD61F6231F400CFB481 /* PopupDialog.framework */; };
+		C4FEDDD81F6231F400CFB481 /* PopupDialog.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C4FEDDD61F6231F400CFB481 /* PopupDialog.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +36,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		C4FEDDD91F6231F400CFB481 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				C4FEDDD81F6231F400CFB481 /* PopupDialog.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		C4FEDDA31F62306D00CFB481 /* DarkstarAuctionHouse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DarkstarAuctionHouse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4FEDDA61F62306D00CFB481 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +65,7 @@
 		C4FEDDC41F62306D00CFB481 /* DarkstarAuctionHouseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DarkstarAuctionHouseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4FEDDC81F62306D00CFB481 /* DarkstarAuctionHouseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkstarAuctionHouseUITests.swift; sourceTree = "<group>"; };
 		C4FEDDCA1F62306D00CFB481 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4FEDDD61F6231F400CFB481 /* PopupDialog.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PopupDialog.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4FEDDD71F6231F400CFB481 /* PopupDialog.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +97,7 @@
 		C4FEDD9A1F62306D00CFB481 = {
 			isa = PBXGroup;
 			children = (
+				C4FEDDD61F6231F400CFB481 /* PopupDialog.framework */,
 				C4FEDDA51F62306D00CFB481 /* DarkstarAuctionHouse */,
 				C4FEDDBC1F62306D00CFB481 /* DarkstarAuctionHouseTests */,
 				C4FEDDC71F62306D00CFB481 /* DarkstarAuctionHouseUITests */,
@@ -138,6 +157,8 @@
 				C4FEDD9F1F62306D00CFB481 /* Sources */,
 				C4FEDDA01F62306D00CFB481 /* Frameworks */,
 				C4FEDDA11F62306D00CFB481 /* Resources */,
+				C4FEDDD91F6231F400CFB481 /* Embed Frameworks */,
+				C4FEDDDA1F6231FE00CFB481 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -259,6 +280,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C4FEDDDA1F6231FE00CFB481 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 8;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/PopupDialog.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C4FEDD9F1F62306D00CFB481 /* Sources */ = {
@@ -422,6 +460,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = U4ZF26AC74;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = DarkstarAuctionHouse/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Darkstar.AuctionHouse.DarkstarAuctionHouse;
@@ -435,6 +477,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = U4ZF26AC74;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = DarkstarAuctionHouse/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Darkstar.AuctionHouse.DarkstarAuctionHouse;
