@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C4A667731F6F082500401601 /* SQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4A667721F6F082500401601 /* SQLite.framework */; };
+		C4A667741F6F082500401601 /* SQLite.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C4A667721F6F082500401601 /* SQLite.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C4A667761F70CAA800401601 /* WeaponItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A667751F70CAA800401601 /* WeaponItem.swift */; };
+		C4C84A101F679A9500DDDD75 /* DarkstarAuctionHouseServiceApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C84A0F1F679A9500DDDD75 /* DarkstarAuctionHouseServiceApi.swift */; };
+		C4C84A181F6B786700DDDD75 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4C84A151F6B764200DDDD75 /* Alamofire.framework */; };
+		C4C84A191F6B786700DDDD75 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C4C84A151F6B764200DDDD75 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C4C84A1B1F6B788500DDDD75 /* Moya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4C849F21F66527400DDDD75 /* Moya.framework */; };
+		C4C84A1C1F6B788500DDDD75 /* Moya.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C4C849F21F66527400DDDD75 /* Moya.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C4C84A1D1F6B789E00DDDD75 /* PopupDialog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4FEDDD61F6231F400CFB481 /* PopupDialog.framework */; };
+		C4C84A1E1F6B789E00DDDD75 /* PopupDialog.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C4FEDDD61F6231F400CFB481 /* PopupDialog.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C4C84A1F1F6B78B600DDDD75 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4C849FB1F66528E00DDDD75 /* Result.framework */; };
+		C4C84A201F6B78B600DDDD75 /* Result.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C4C849FB1F66528E00DDDD75 /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C4FEDDA71F62306D00CFB481 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4FEDDA61F62306D00CFB481 /* AppDelegate.swift */; };
 		C4FEDDA91F62306D00CFB481 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4FEDDA81F62306D00CFB481 /* FirstViewController.swift */; };
 		C4FEDDAB1F62306D00CFB481 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4FEDDAA1F62306D00CFB481 /* SecondViewController.swift */; };
@@ -15,8 +27,6 @@
 		C4FEDDB31F62306D00CFB481 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4FEDDB11F62306D00CFB481 /* LaunchScreen.storyboard */; };
 		C4FEDDBE1F62306D00CFB481 /* DarkstarAuctionHouseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4FEDDBD1F62306D00CFB481 /* DarkstarAuctionHouseTests.swift */; };
 		C4FEDDC91F62306D00CFB481 /* DarkstarAuctionHouseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4FEDDC81F62306D00CFB481 /* DarkstarAuctionHouseUITests.swift */; };
-		C4FEDDD71F6231F400CFB481 /* PopupDialog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4FEDDD61F6231F400CFB481 /* PopupDialog.framework */; };
-		C4FEDDD81F6231F400CFB481 /* PopupDialog.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C4FEDDD61F6231F400CFB481 /* PopupDialog.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,13 +47,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		C4FEDDD91F6231F400CFB481 /* Embed Frameworks */ = {
+		C4C84A1A1F6B786700DDDD75 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				C4FEDDD81F6231F400CFB481 /* PopupDialog.framework in Embed Frameworks */,
+				C4C84A1C1F6B788500DDDD75 /* Moya.framework in Embed Frameworks */,
+				C4C84A1E1F6B789E00DDDD75 /* PopupDialog.framework in Embed Frameworks */,
+				C4C84A191F6B786700DDDD75 /* Alamofire.framework in Embed Frameworks */,
+				C4A667741F6F082500401601 /* SQLite.framework in Embed Frameworks */,
+				C4C84A201F6B78B600DDDD75 /* Result.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -51,6 +65,22 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		C4A667721F6F082500401601 /* SQLite.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SQLite.framework; sourceTree = "<group>"; };
+		C4A667751F70CAA800401601 /* WeaponItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeaponItem.swift; sourceTree = "<group>"; };
+		C4C849EE1F66523B00DDDD75 /* Moya.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Moya.framework; path = ../Carthage/Build/iOS/Moya.framework; sourceTree = "<group>"; };
+		C4C849F01F66526000DDDD75 /* ReactiveMoya.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveMoya.framework; path = ../Carthage/Build/iOS/ReactiveMoya.framework; sourceTree = "<group>"; };
+		C4C849F21F66527400DDDD75 /* Moya.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Moya.framework; sourceTree = "<group>"; };
+		C4C849F51F66527D00DDDD75 /* ReactiveMoya.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ReactiveMoya.framework; sourceTree = "<group>"; };
+		C4C849F81F66528500DDDD75 /* ReactiveSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ReactiveSwift.framework; sourceTree = "<group>"; };
+		C4C849FB1F66528E00DDDD75 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Result.framework; sourceTree = "<group>"; };
+		C4C849FE1F66529600DDDD75 /* RxBlocking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RxBlocking.framework; sourceTree = "<group>"; };
+		C4C84A011F66529F00DDDD75 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RxCocoa.framework; sourceTree = "<group>"; };
+		C4C84A041F6652A800DDDD75 /* RxMoya.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RxMoya.framework; sourceTree = "<group>"; };
+		C4C84A071F6652B500DDDD75 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RxSwift.framework; sourceTree = "<group>"; };
+		C4C84A0A1F6652BC00DDDD75 /* RxTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RxTest.framework; sourceTree = "<group>"; };
+		C4C84A0F1F679A9500DDDD75 /* DarkstarAuctionHouseServiceApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DarkstarAuctionHouseServiceApi.swift; sourceTree = "<group>"; };
+		C4C84A131F6B762A00DDDD75 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = ../Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		C4C84A151F6B764200DDDD75 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Alamofire.framework; sourceTree = "<group>"; };
 		C4FEDDA31F62306D00CFB481 /* DarkstarAuctionHouse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DarkstarAuctionHouse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4FEDDA61F62306D00CFB481 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C4FEDDA81F62306D00CFB481 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -73,7 +103,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C4FEDDD71F6231F400CFB481 /* PopupDialog.framework in Frameworks */,
+				C4C84A1B1F6B788500DDDD75 /* Moya.framework in Frameworks */,
+				C4C84A1D1F6B789E00DDDD75 /* PopupDialog.framework in Frameworks */,
+				C4C84A181F6B786700DDDD75 /* Alamofire.framework in Frameworks */,
+				C4A667731F6F082500401601 /* SQLite.framework in Frameworks */,
+				C4C84A1F1F6B78B600DDDD75 /* Result.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,14 +128,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C4C849ED1F66523B00DDDD75 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C4C84A131F6B762A00DDDD75 /* Alamofire.framework */,
+				C4C849F01F66526000DDDD75 /* ReactiveMoya.framework */,
+				C4C849EE1F66523B00DDDD75 /* Moya.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C4FEDD9A1F62306D00CFB481 = {
 			isa = PBXGroup;
 			children = (
+				C4A667721F6F082500401601 /* SQLite.framework */,
+				C4C84A151F6B764200DDDD75 /* Alamofire.framework */,
+				C4C84A0A1F6652BC00DDDD75 /* RxTest.framework */,
+				C4C84A071F6652B500DDDD75 /* RxSwift.framework */,
+				C4C84A041F6652A800DDDD75 /* RxMoya.framework */,
+				C4C84A011F66529F00DDDD75 /* RxCocoa.framework */,
+				C4C849FE1F66529600DDDD75 /* RxBlocking.framework */,
+				C4C849FB1F66528E00DDDD75 /* Result.framework */,
+				C4C849F81F66528500DDDD75 /* ReactiveSwift.framework */,
+				C4C849F51F66527D00DDDD75 /* ReactiveMoya.framework */,
+				C4C849F21F66527400DDDD75 /* Moya.framework */,
 				C4FEDDD61F6231F400CFB481 /* PopupDialog.framework */,
 				C4FEDDA51F62306D00CFB481 /* DarkstarAuctionHouse */,
 				C4FEDDBC1F62306D00CFB481 /* DarkstarAuctionHouseTests */,
 				C4FEDDC71F62306D00CFB481 /* DarkstarAuctionHouseUITests */,
 				C4FEDDA41F62306D00CFB481 /* Products */,
+				C4C849ED1F66523B00DDDD75 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +181,8 @@
 				C4FEDDAF1F62306D00CFB481 /* Assets.xcassets */,
 				C4FEDDB11F62306D00CFB481 /* LaunchScreen.storyboard */,
 				C4FEDDB41F62306D00CFB481 /* Info.plist */,
+				C4C84A0F1F679A9500DDDD75 /* DarkstarAuctionHouseServiceApi.swift */,
+				C4A667751F70CAA800401601 /* WeaponItem.swift */,
 			);
 			path = DarkstarAuctionHouse;
 			sourceTree = "<group>";
@@ -157,8 +215,8 @@
 				C4FEDD9F1F62306D00CFB481 /* Sources */,
 				C4FEDDA01F62306D00CFB481 /* Frameworks */,
 				C4FEDDA11F62306D00CFB481 /* Resources */,
-				C4FEDDD91F6231F400CFB481 /* Embed Frameworks */,
 				C4FEDDDA1F6231FE00CFB481 /* ShellScript */,
+				C4C84A1A1F6B786700DDDD75 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -289,6 +347,16 @@
 			);
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/PopupDialog.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Moya.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/ReactiveMoya.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/ReactiveSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Result.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxBlocking.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxMoya.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxTest.framework",
 			);
 			outputPaths = (
 			);
@@ -304,8 +372,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				C4FEDDAB1F62306D00CFB481 /* SecondViewController.swift in Sources */,
+				C4C84A101F679A9500DDDD75 /* DarkstarAuctionHouseServiceApi.swift in Sources */,
 				C4FEDDA71F62306D00CFB481 /* AppDelegate.swift in Sources */,
 				C4FEDDA91F62306D00CFB481 /* FirstViewController.swift in Sources */,
+				C4A667761F70CAA800401601 /* WeaponItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -465,6 +535,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = DarkstarAuctionHouse/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Darkstar.AuctionHouse.DarkstarAuctionHouse;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -482,6 +553,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = DarkstarAuctionHouse/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Darkstar.AuctionHouse.DarkstarAuctionHouse;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -566,6 +638,7 @@
 				C4FEDDCF1F62306D00CFB481 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C4FEDDD01F62306D00CFB481 /* Build configuration list for PBXNativeTarget "DarkstarAuctionHouseTests" */ = {
 			isa = XCConfigurationList;
@@ -574,6 +647,7 @@
 				C4FEDDD21F62306D00CFB481 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C4FEDDD31F62306D00CFB481 /* Build configuration list for PBXNativeTarget "DarkstarAuctionHouseUITests" */ = {
 			isa = XCConfigurationList;
@@ -582,6 +656,7 @@
 				C4FEDDD51F62306D00CFB481 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
