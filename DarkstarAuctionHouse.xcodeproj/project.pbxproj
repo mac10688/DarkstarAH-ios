@@ -1,0 +1,690 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C49B2E531F73818D009D668F /* ReactiveMoya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C49B2E471F73818B009D668F /* ReactiveMoya.framework */; };
+		C49B2E541F73818D009D668F /* ReactiveMoya.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C49B2E471F73818B009D668F /* ReactiveMoya.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C49B2E551F73818D009D668F /* Moya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C49B2E481F73818B009D668F /* Moya.framework */; };
+		C49B2E561F73818D009D668F /* Moya.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C49B2E481F73818B009D668F /* Moya.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C49B2E571F73818D009D668F /* RxTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C49B2E491F73818B009D668F /* RxTest.framework */; };
+		C49B2E581F73818D009D668F /* RxTest.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C49B2E491F73818B009D668F /* RxTest.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C49B2E591F73818D009D668F /* PopupDialog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C49B2E4A1F73818C009D668F /* PopupDialog.framework */; };
+		C49B2E5A1F73818D009D668F /* PopupDialog.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C49B2E4A1F73818C009D668F /* PopupDialog.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C49B2E5B1F73818D009D668F /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C49B2E4B1F73818C009D668F /* RxCocoa.framework */; };
+		C49B2E5C1F73818D009D668F /* RxCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C49B2E4B1F73818C009D668F /* RxCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C49B2E5D1F73818D009D668F /* RxMoya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C49B2E4C1F73818C009D668F /* RxMoya.framework */; };
+		C49B2E5E1F73818D009D668F /* RxMoya.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C49B2E4C1F73818C009D668F /* RxMoya.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C49B2E5F1F73818D009D668F /* ReactiveSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C49B2E4D1F73818C009D668F /* ReactiveSwift.framework */; };
+		C49B2E601F73818D009D668F /* ReactiveSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C49B2E4D1F73818C009D668F /* ReactiveSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C49B2E611F73818D009D668F /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C49B2E4E1F73818C009D668F /* RxSwift.framework */; };
+		C49B2E621F73818D009D668F /* RxSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C49B2E4E1F73818C009D668F /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C49B2E631F73818D009D668F /* SQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C49B2E4F1F73818D009D668F /* SQLite.framework */; };
+		C49B2E641F73818D009D668F /* SQLite.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C49B2E4F1F73818D009D668F /* SQLite.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C49B2E651F73818D009D668F /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C49B2E501F73818D009D668F /* Alamofire.framework */; };
+		C49B2E661F73818D009D668F /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C49B2E501F73818D009D668F /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C49B2E671F73818D009D668F /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C49B2E511F73818D009D668F /* Result.framework */; };
+		C49B2E681F73818D009D668F /* Result.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C49B2E511F73818D009D668F /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C49B2E691F73818D009D668F /* RxBlocking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C49B2E521F73818D009D668F /* RxBlocking.framework */; };
+		C49B2E6A1F73818D009D668F /* RxBlocking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C49B2E521F73818D009D668F /* RxBlocking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C4A667761F70CAA800401601 /* WeaponItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A667751F70CAA800401601 /* WeaponItem.swift */; };
+		C4A667781F72101E00401601 /* DarkstarDb.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A667771F72101E00401601 /* DarkstarDb.swift */; };
+		C4C84A101F679A9500DDDD75 /* DarkstarAuctionHouseServiceApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C84A0F1F679A9500DDDD75 /* DarkstarAuctionHouseServiceApi.swift */; };
+		C4FEDDA71F62306D00CFB481 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4FEDDA61F62306D00CFB481 /* AppDelegate.swift */; };
+		C4FEDDA91F62306D00CFB481 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4FEDDA81F62306D00CFB481 /* FirstViewController.swift */; };
+		C4FEDDAB1F62306D00CFB481 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4FEDDAA1F62306D00CFB481 /* SecondViewController.swift */; };
+		C4FEDDAE1F62306D00CFB481 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4FEDDAC1F62306D00CFB481 /* Main.storyboard */; };
+		C4FEDDB01F62306D00CFB481 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4FEDDAF1F62306D00CFB481 /* Assets.xcassets */; };
+		C4FEDDB31F62306D00CFB481 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4FEDDB11F62306D00CFB481 /* LaunchScreen.storyboard */; };
+		C4FEDDBE1F62306D00CFB481 /* DarkstarAuctionHouseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4FEDDBD1F62306D00CFB481 /* DarkstarAuctionHouseTests.swift */; };
+		C4FEDDC91F62306D00CFB481 /* DarkstarAuctionHouseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4FEDDC81F62306D00CFB481 /* DarkstarAuctionHouseUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C4FEDDBA1F62306D00CFB481 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C4FEDD9B1F62306D00CFB481 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C4FEDDA21F62306D00CFB481;
+			remoteInfo = DarkstarAuctionHouse;
+		};
+		C4FEDDC51F62306D00CFB481 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C4FEDD9B1F62306D00CFB481 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C4FEDDA21F62306D00CFB481;
+			remoteInfo = DarkstarAuctionHouse;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C49B2E6B1F73818E009D668F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				C49B2E561F73818D009D668F /* Moya.framework in Embed Frameworks */,
+				C49B2E681F73818D009D668F /* Result.framework in Embed Frameworks */,
+				C49B2E601F73818D009D668F /* ReactiveSwift.framework in Embed Frameworks */,
+				C49B2E5A1F73818D009D668F /* PopupDialog.framework in Embed Frameworks */,
+				C49B2E661F73818D009D668F /* Alamofire.framework in Embed Frameworks */,
+				C49B2E5E1F73818D009D668F /* RxMoya.framework in Embed Frameworks */,
+				C49B2E621F73818D009D668F /* RxSwift.framework in Embed Frameworks */,
+				C49B2E541F73818D009D668F /* ReactiveMoya.framework in Embed Frameworks */,
+				C49B2E5C1F73818D009D668F /* RxCocoa.framework in Embed Frameworks */,
+				C49B2E581F73818D009D668F /* RxTest.framework in Embed Frameworks */,
+				C49B2E641F73818D009D668F /* SQLite.framework in Embed Frameworks */,
+				C49B2E6A1F73818D009D668F /* RxBlocking.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		C49B2E471F73818B009D668F /* ReactiveMoya.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveMoya.framework; path = Carthage/Build/iOS/ReactiveMoya.framework; sourceTree = "<group>"; };
+		C49B2E481F73818B009D668F /* Moya.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Moya.framework; path = Carthage/Build/iOS/Moya.framework; sourceTree = "<group>"; };
+		C49B2E491F73818B009D668F /* RxTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxTest.framework; path = Carthage/Build/iOS/RxTest.framework; sourceTree = "<group>"; };
+		C49B2E4A1F73818C009D668F /* PopupDialog.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PopupDialog.framework; path = Carthage/Build/iOS/PopupDialog.framework; sourceTree = "<group>"; };
+		C49B2E4B1F73818C009D668F /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
+		C49B2E4C1F73818C009D668F /* RxMoya.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxMoya.framework; path = Carthage/Build/iOS/RxMoya.framework; sourceTree = "<group>"; };
+		C49B2E4D1F73818C009D668F /* ReactiveSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveSwift.framework; path = Carthage/Build/iOS/ReactiveSwift.framework; sourceTree = "<group>"; };
+		C49B2E4E1F73818C009D668F /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
+		C49B2E4F1F73818D009D668F /* SQLite.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SQLite.framework; path = Carthage/Build/iOS/SQLite.framework; sourceTree = "<group>"; };
+		C49B2E501F73818D009D668F /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		C49B2E511F73818D009D668F /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
+		C49B2E521F73818D009D668F /* RxBlocking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxBlocking.framework; path = Carthage/Build/iOS/RxBlocking.framework; sourceTree = "<group>"; };
+		C4A667751F70CAA800401601 /* WeaponItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeaponItem.swift; sourceTree = "<group>"; };
+		C4A667771F72101E00401601 /* DarkstarDb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DarkstarDb.swift; sourceTree = "<group>"; };
+		C4C849EE1F66523B00DDDD75 /* Moya.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Moya.framework; path = ../Carthage/Build/iOS/Moya.framework; sourceTree = "<group>"; };
+		C4C849F01F66526000DDDD75 /* ReactiveMoya.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveMoya.framework; path = ../Carthage/Build/iOS/ReactiveMoya.framework; sourceTree = "<group>"; };
+		C4C84A0F1F679A9500DDDD75 /* DarkstarAuctionHouseServiceApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DarkstarAuctionHouseServiceApi.swift; sourceTree = "<group>"; };
+		C4C84A131F6B762A00DDDD75 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = ../Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		C4FEDDA31F62306D00CFB481 /* DarkstarAuctionHouse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DarkstarAuctionHouse.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4FEDDA61F62306D00CFB481 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C4FEDDA81F62306D00CFB481 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		C4FEDDAA1F62306D00CFB481 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		C4FEDDAD1F62306D00CFB481 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C4FEDDAF1F62306D00CFB481 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C4FEDDB21F62306D00CFB481 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C4FEDDB41F62306D00CFB481 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4FEDDB91F62306D00CFB481 /* DarkstarAuctionHouseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DarkstarAuctionHouseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4FEDDBD1F62306D00CFB481 /* DarkstarAuctionHouseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkstarAuctionHouseTests.swift; sourceTree = "<group>"; };
+		C4FEDDBF1F62306D00CFB481 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4FEDDC41F62306D00CFB481 /* DarkstarAuctionHouseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DarkstarAuctionHouseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4FEDDC81F62306D00CFB481 /* DarkstarAuctionHouseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkstarAuctionHouseUITests.swift; sourceTree = "<group>"; };
+		C4FEDDCA1F62306D00CFB481 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C4FEDDA01F62306D00CFB481 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C49B2E551F73818D009D668F /* Moya.framework in Frameworks */,
+				C49B2E671F73818D009D668F /* Result.framework in Frameworks */,
+				C49B2E5F1F73818D009D668F /* ReactiveSwift.framework in Frameworks */,
+				C49B2E591F73818D009D668F /* PopupDialog.framework in Frameworks */,
+				C49B2E651F73818D009D668F /* Alamofire.framework in Frameworks */,
+				C49B2E5D1F73818D009D668F /* RxMoya.framework in Frameworks */,
+				C49B2E611F73818D009D668F /* RxSwift.framework in Frameworks */,
+				C49B2E531F73818D009D668F /* ReactiveMoya.framework in Frameworks */,
+				C49B2E5B1F73818D009D668F /* RxCocoa.framework in Frameworks */,
+				C49B2E571F73818D009D668F /* RxTest.framework in Frameworks */,
+				C49B2E631F73818D009D668F /* SQLite.framework in Frameworks */,
+				C49B2E691F73818D009D668F /* RxBlocking.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4FEDDB61F62306D00CFB481 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4FEDDC11F62306D00CFB481 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C4C849ED1F66523B00DDDD75 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C4C84A131F6B762A00DDDD75 /* Alamofire.framework */,
+				C4C849F01F66526000DDDD75 /* ReactiveMoya.framework */,
+				C4C849EE1F66523B00DDDD75 /* Moya.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C4FEDD9A1F62306D00CFB481 = {
+			isa = PBXGroup;
+			children = (
+				C49B2E501F73818D009D668F /* Alamofire.framework */,
+				C49B2E481F73818B009D668F /* Moya.framework */,
+				C49B2E4A1F73818C009D668F /* PopupDialog.framework */,
+				C49B2E471F73818B009D668F /* ReactiveMoya.framework */,
+				C49B2E4D1F73818C009D668F /* ReactiveSwift.framework */,
+				C49B2E511F73818D009D668F /* Result.framework */,
+				C49B2E521F73818D009D668F /* RxBlocking.framework */,
+				C49B2E4B1F73818C009D668F /* RxCocoa.framework */,
+				C49B2E4C1F73818C009D668F /* RxMoya.framework */,
+				C49B2E4E1F73818C009D668F /* RxSwift.framework */,
+				C49B2E491F73818B009D668F /* RxTest.framework */,
+				C49B2E4F1F73818D009D668F /* SQLite.framework */,
+				C4FEDDA51F62306D00CFB481 /* DarkstarAuctionHouse */,
+				C4FEDDBC1F62306D00CFB481 /* DarkstarAuctionHouseTests */,
+				C4FEDDC71F62306D00CFB481 /* DarkstarAuctionHouseUITests */,
+				C4FEDDA41F62306D00CFB481 /* Products */,
+				C4C849ED1F66523B00DDDD75 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C4FEDDA41F62306D00CFB481 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C4FEDDA31F62306D00CFB481 /* DarkstarAuctionHouse.app */,
+				C4FEDDB91F62306D00CFB481 /* DarkstarAuctionHouseTests.xctest */,
+				C4FEDDC41F62306D00CFB481 /* DarkstarAuctionHouseUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C4FEDDA51F62306D00CFB481 /* DarkstarAuctionHouse */ = {
+			isa = PBXGroup;
+			children = (
+				C4FEDDA61F62306D00CFB481 /* AppDelegate.swift */,
+				C4FEDDA81F62306D00CFB481 /* FirstViewController.swift */,
+				C4FEDDAA1F62306D00CFB481 /* SecondViewController.swift */,
+				C4FEDDAC1F62306D00CFB481 /* Main.storyboard */,
+				C4FEDDAF1F62306D00CFB481 /* Assets.xcassets */,
+				C4FEDDB11F62306D00CFB481 /* LaunchScreen.storyboard */,
+				C4FEDDB41F62306D00CFB481 /* Info.plist */,
+				C4C84A0F1F679A9500DDDD75 /* DarkstarAuctionHouseServiceApi.swift */,
+				C4A667751F70CAA800401601 /* WeaponItem.swift */,
+				C4A667771F72101E00401601 /* DarkstarDb.swift */,
+			);
+			path = DarkstarAuctionHouse;
+			sourceTree = "<group>";
+		};
+		C4FEDDBC1F62306D00CFB481 /* DarkstarAuctionHouseTests */ = {
+			isa = PBXGroup;
+			children = (
+				C4FEDDBD1F62306D00CFB481 /* DarkstarAuctionHouseTests.swift */,
+				C4FEDDBF1F62306D00CFB481 /* Info.plist */,
+			);
+			path = DarkstarAuctionHouseTests;
+			sourceTree = "<group>";
+		};
+		C4FEDDC71F62306D00CFB481 /* DarkstarAuctionHouseUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C4FEDDC81F62306D00CFB481 /* DarkstarAuctionHouseUITests.swift */,
+				C4FEDDCA1F62306D00CFB481 /* Info.plist */,
+			);
+			path = DarkstarAuctionHouseUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C4FEDDA21F62306D00CFB481 /* DarkstarAuctionHouse */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4FEDDCD1F62306D00CFB481 /* Build configuration list for PBXNativeTarget "DarkstarAuctionHouse" */;
+			buildPhases = (
+				C4FEDD9F1F62306D00CFB481 /* Sources */,
+				C4FEDDA01F62306D00CFB481 /* Frameworks */,
+				C4FEDDA11F62306D00CFB481 /* Resources */,
+				C4FEDDDA1F6231FE00CFB481 /* ShellScript */,
+				C49B2E6B1F73818E009D668F /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DarkstarAuctionHouse;
+			productName = DarkstarAuctionHouse;
+			productReference = C4FEDDA31F62306D00CFB481 /* DarkstarAuctionHouse.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C4FEDDB81F62306D00CFB481 /* DarkstarAuctionHouseTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4FEDDD01F62306D00CFB481 /* Build configuration list for PBXNativeTarget "DarkstarAuctionHouseTests" */;
+			buildPhases = (
+				C4FEDDB51F62306D00CFB481 /* Sources */,
+				C4FEDDB61F62306D00CFB481 /* Frameworks */,
+				C4FEDDB71F62306D00CFB481 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C4FEDDBB1F62306D00CFB481 /* PBXTargetDependency */,
+			);
+			name = DarkstarAuctionHouseTests;
+			productName = DarkstarAuctionHouseTests;
+			productReference = C4FEDDB91F62306D00CFB481 /* DarkstarAuctionHouseTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C4FEDDC31F62306D00CFB481 /* DarkstarAuctionHouseUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4FEDDD31F62306D00CFB481 /* Build configuration list for PBXNativeTarget "DarkstarAuctionHouseUITests" */;
+			buildPhases = (
+				C4FEDDC01F62306D00CFB481 /* Sources */,
+				C4FEDDC11F62306D00CFB481 /* Frameworks */,
+				C4FEDDC21F62306D00CFB481 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C4FEDDC61F62306D00CFB481 /* PBXTargetDependency */,
+			);
+			name = DarkstarAuctionHouseUITests;
+			productName = DarkstarAuctionHouseUITests;
+			productReference = C4FEDDC41F62306D00CFB481 /* DarkstarAuctionHouseUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C4FEDD9B1F62306D00CFB481 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = Darkstar;
+				TargetAttributes = {
+					C4FEDDA21F62306D00CFB481 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = U4ZF26AC74;
+						ProvisioningStyle = Automatic;
+					};
+					C4FEDDB81F62306D00CFB481 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = U4ZF26AC74;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C4FEDDA21F62306D00CFB481;
+					};
+					C4FEDDC31F62306D00CFB481 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = U4ZF26AC74;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C4FEDDA21F62306D00CFB481;
+					};
+				};
+			};
+			buildConfigurationList = C4FEDD9E1F62306D00CFB481 /* Build configuration list for PBXProject "DarkstarAuctionHouse" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C4FEDD9A1F62306D00CFB481;
+			productRefGroup = C4FEDDA41F62306D00CFB481 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C4FEDDA21F62306D00CFB481 /* DarkstarAuctionHouse */,
+				C4FEDDB81F62306D00CFB481 /* DarkstarAuctionHouseTests */,
+				C4FEDDC31F62306D00CFB481 /* DarkstarAuctionHouseUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C4FEDDA11F62306D00CFB481 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4FEDDB31F62306D00CFB481 /* LaunchScreen.storyboard in Resources */,
+				C4FEDDB01F62306D00CFB481 /* Assets.xcassets in Resources */,
+				C4FEDDAE1F62306D00CFB481 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4FEDDB71F62306D00CFB481 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4FEDDC21F62306D00CFB481 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C4FEDDDA1F6231FE00CFB481 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 8;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Moya.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C4FEDD9F1F62306D00CFB481 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4FEDDAB1F62306D00CFB481 /* SecondViewController.swift in Sources */,
+				C4C84A101F679A9500DDDD75 /* DarkstarAuctionHouseServiceApi.swift in Sources */,
+				C4FEDDA71F62306D00CFB481 /* AppDelegate.swift in Sources */,
+				C4A667781F72101E00401601 /* DarkstarDb.swift in Sources */,
+				C4FEDDA91F62306D00CFB481 /* FirstViewController.swift in Sources */,
+				C4A667761F70CAA800401601 /* WeaponItem.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4FEDDB51F62306D00CFB481 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4FEDDBE1F62306D00CFB481 /* DarkstarAuctionHouseTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4FEDDC01F62306D00CFB481 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4FEDDC91F62306D00CFB481 /* DarkstarAuctionHouseUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C4FEDDBB1F62306D00CFB481 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C4FEDDA21F62306D00CFB481 /* DarkstarAuctionHouse */;
+			targetProxy = C4FEDDBA1F62306D00CFB481 /* PBXContainerItemProxy */;
+		};
+		C4FEDDC61F62306D00CFB481 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C4FEDDA21F62306D00CFB481 /* DarkstarAuctionHouse */;
+			targetProxy = C4FEDDC51F62306D00CFB481 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C4FEDDAC1F62306D00CFB481 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C4FEDDAD1F62306D00CFB481 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C4FEDDB11F62306D00CFB481 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C4FEDDB21F62306D00CFB481 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C4FEDDCB1F62306D00CFB481 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos11.0;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C4FEDDCC1F62306D00CFB481 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos11.0;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C4FEDDCE1F62306D00CFB481 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = U4ZF26AC74;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/**",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = DarkstarAuctionHouse/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Darkstar.AuctionHouse.DarkstarAuctionHouse;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		C4FEDDCF1F62306D00CFB481 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = U4ZF26AC74;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/**",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = DarkstarAuctionHouse/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Darkstar.AuctionHouse.DarkstarAuctionHouse;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		C4FEDDD11F62306D00CFB481 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = U4ZF26AC74;
+				INFOPLIST_FILE = DarkstarAuctionHouseTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Darkstar.AuctionHouse.DarkstarAuctionHouseTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DarkstarAuctionHouse.app/DarkstarAuctionHouse";
+			};
+			name = Debug;
+		};
+		C4FEDDD21F62306D00CFB481 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = U4ZF26AC74;
+				INFOPLIST_FILE = DarkstarAuctionHouseTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Darkstar.AuctionHouse.DarkstarAuctionHouseTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DarkstarAuctionHouse.app/DarkstarAuctionHouse";
+			};
+			name = Release;
+		};
+		C4FEDDD41F62306D00CFB481 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = U4ZF26AC74;
+				INFOPLIST_FILE = DarkstarAuctionHouseUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Darkstar.AuctionHouse.DarkstarAuctionHouseUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = DarkstarAuctionHouse;
+			};
+			name = Debug;
+		};
+		C4FEDDD51F62306D00CFB481 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = U4ZF26AC74;
+				INFOPLIST_FILE = DarkstarAuctionHouseUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Darkstar.AuctionHouse.DarkstarAuctionHouseUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = DarkstarAuctionHouse;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C4FEDD9E1F62306D00CFB481 /* Build configuration list for PBXProject "DarkstarAuctionHouse" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4FEDDCB1F62306D00CFB481 /* Debug */,
+				C4FEDDCC1F62306D00CFB481 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C4FEDDCD1F62306D00CFB481 /* Build configuration list for PBXNativeTarget "DarkstarAuctionHouse" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4FEDDCE1F62306D00CFB481 /* Debug */,
+				C4FEDDCF1F62306D00CFB481 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C4FEDDD01F62306D00CFB481 /* Build configuration list for PBXNativeTarget "DarkstarAuctionHouseTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4FEDDD11F62306D00CFB481 /* Debug */,
+				C4FEDDD21F62306D00CFB481 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C4FEDDD31F62306D00CFB481 /* Build configuration list for PBXNativeTarget "DarkstarAuctionHouseUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4FEDDD41F62306D00CFB481 /* Debug */,
+				C4FEDDD51F62306D00CFB481 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C4FEDD9B1F62306D00CFB481 /* Project object */;
+}
